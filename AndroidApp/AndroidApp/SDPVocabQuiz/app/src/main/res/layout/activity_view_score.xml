@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizScoresActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/quizname_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Quiz Name:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/show_quizname"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/show_quizname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="37dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/quizname_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student: "
+        app:layout_constraintBaseline_toBaselineOf="@+id/show_username"
+        app:layout_constraintStart_toStartOf="@+id/quizname_title" />
+
+    <TextView
+        android:id="@+id/show_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/user_title"
+        app:layout_constraintTop_toBottomOf="@+id/show_quizname" />
+
+
+    <TextView
+        android:id="@+id/firstscore_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Score:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/get_first_score"
+        app:layout_constraintStart_toStartOf="@+id/user_title" />
+
+    <TextView
+        android:id="@+id/get_first_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/date_title1"
+        app:layout_constraintStart_toEndOf="@+id/firstscore_title" />
+
+    <TextView
+        android:id="@+id/date_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:text="Datetime:"
+        app:layout_constraintStart_toEndOf="@+id/get_first_score"
+        app:layout_constraintTop_toBottomOf="@+id/show_username" />
+
+    <TextView
+        android:id="@+id/highest_score"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:text="Highest Score:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/get_highest_score"
+        app:layout_constraintStart_toStartOf="@+id/firstscore_title" />
+
+    <TextView
+        android:id="@+id/get_highest_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/datetitle2"
+        app:layout_constraintStart_toEndOf="@+id/highest_score"
+        app:layout_constraintTop_toBottomOf="@+id/get_first_score" />
+
+    <TextView
+        android:id="@+id/datetitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Datetime:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/get_highest_score"
+        app:layout_constraintStart_toStartOf="@+id/date_title1" />
+
+    <TextView
+        android:id="@+id/first_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="200dp"
+        android:text="STUDENTS WITH FULL SCORE: "
+        android:textColor="@color/darkyellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/student1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_three" />
+
+
+    <TextView
+        android:id="@+id/datetime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/date_title1"
+        app:layout_constraintStart_toEndOf="@+id/date_title1" />
+
+    <TextView
+        android:id="@+id/datetime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/datetitle2"
+        app:layout_constraintStart_toEndOf="@+id/datetitle2" />
+
+</android.support.constraint.ConstraintLayout>

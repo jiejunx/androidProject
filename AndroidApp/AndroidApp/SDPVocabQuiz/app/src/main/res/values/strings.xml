@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SDPVocabQuiz</string>
+    <string name="register">REGISTER</string>
+    <string name="major1"></string>
+    <string name="major2">Accounting</string>
+    <string name="major3">Actuarial Science</string>
+    <string name="major4">Computer Science</string>
+    <string name="major5">Business</string>
+    <string name="major6">Art</string>
+    <string name="major7">Economics</string>
+
+</resources>

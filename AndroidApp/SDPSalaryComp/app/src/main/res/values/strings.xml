@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SDP Salary Comparison</string>
+    <string name="error_salary">Invalid salary</string>
+    <string name="city1">Atlanta, GA</string>
+    <string name="city2">Austin, TX</string>
+    <string name="city3">Boston, MA</string>
+    <string name="city4">Honolulu, HI</string>
+    <string name="city5">Las Vegas, NV</string>
+    <string name="city6">Mountain View, CA</string>
+    <string name="city7">New York City, NY</string>
+    <string name="city8">San Francisco, CA</string>
+    <string name="city9">Seattle, WA</string>
+    <string name="city10">Springfield, MO</string>
+    <string name="city11">Tampa, FL</string>
+    <string name="city12">Washington D.C.</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gatech.seclass.sdpvocabquiz.sdpvocabquiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="Dashboard" />
+        <activity
+            android:name=".AddQuizActivity"
+            android:label="Add Quiz"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".AddQuizWordActivity"
+            android:label="Add Word"
+            android:parentActivityName=".AddQuizActivity" />
+        <activity
+            android:name=".AddQuizDefinitionsActivity"
+            android:label="Add Definitions"
+            android:parentActivityName=".AddQuizActivity" />
+        <activity
+            android:name=".PracticeQuizListActivity"
+            android:label="Practice Quiz List"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".PracticeQuizActivity"
+            android:label="Practice Quiz"
+            android:parentActivityName=".PracticeQuizListActivity"/>
+        <activity
+            android:name=".QuizScoreListActivity"
+            android:label="Quiz Score List"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".QuizScoresActivity"
+            android:label="Quiz Scores"
+            android:parentActivityName=".QuizScoreListActivity" />
+        <activity
+            android:name=".RemoveQuizListActivity"
+            android:label="Remove Quiz List"
+            android:parentActivityName=".DashboardActivity" />
+    </application>
+
+</manifest>
